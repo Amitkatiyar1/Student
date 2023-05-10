@@ -1,0 +1,45 @@
+<div class="container">
+    <div class ="row">
+        <div class="col-mid-6">
+            <div class="card">
+                <div class ="test-center">
+<h1>Sign Up</h1>
+<h6>Register yourself!</h6>
+                </div>
+                <form>
+
+                    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Name</label>
+                            <input type="text" class="form-control"  formControlName="name"  id="exampleInputName" placeholder="Name">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Id</label>
+                            <input type="number" class="form-control"  formControlName="id"id="exampleInputPMobileno" placeholder="id">
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control"  formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control"  formControlName="password" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary"> Sign up</button>
+                      </form>
+                      <a style ="color: #fff; margin-top: 10px;" routerLink="/login"> Already registered? Click to Login!!</a>
+                </form>
+    
+            </div>
+            
+           
+        </div>
+       
+
+    </div>
+</div>
+<router-outlet></router-outlet>
+

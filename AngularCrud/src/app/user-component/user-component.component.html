@@ -1,0 +1,27 @@
+<p>{{user|json}}</p>
+<body style="margin: 2%;  width:50%; border: 3px solid gray; padding: 5%;">
+<form action="" >
+    <div class="mb-1">
+   <label for ="user_id" class ="form-label" >User Id</label>
+    <input type ="email" class="form-control" name="id" id="user_id" placeholder="Enter your id" [(ngModel)]="user.id">
+    </div>
+    <div class="mb-1">
+        <label for ="user_name" class ="form-label" >User Name</label>
+         <input type ="text" class="form-control" name="name" id="user_name" placeholder="Enter your name" [(ngModel)]="user.name">
+         </div>
+         <div class="mb-1" >
+            <label for ="user_city" class ="form-label" >User City</label>
+             <input type ="text" class="form-control" name="city" id="user_id" placeholder="Enter your city" [(ngModel)]="user.city">
+             </div>
+             <div class="mb-1" >
+                <label for ="formFile" class ="form-label" >Select file</label>
+                 <input type ="file" class="form-control" name="imageName" id="formFile" [(ngModel)]="user.imageName" (change)="onChangeFile($event)">
+                 </div>
+                
+             <div class="Container text-center">
+
+                <button class="btn btn-success" (click)="doRegister()">Register</button>
+             </div>
+             
+</form>
+</body>

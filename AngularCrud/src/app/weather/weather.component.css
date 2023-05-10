@@ -1,0 +1,82 @@
+
+.card{
+  
+    border: none;
+    width: 500px;
+    padding: 48px;;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    background: rgb(128, 138, 145);
+    background: linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(205, 46%, 30%, 1) 100%);
+}
+.card h1, h6{
+    color: white;
+
+}
+label{
+    color: white;
+}
+
+.card1{
+  
+    border: none;
+    width: 500px;
+    padding: 48px;;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    transform: translate(-50%,-50%);
+    background: rgb(128, 138, 145);
+    background: linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(205, 46%, 30%, 1) 100%);
+}
+.card1 h1, h6{
+    color: white;
+
+}
+label{
+    color: white;
+}
+
+.card2{
+  
+    border: none;
+    width: 500px;
+    padding: 48px;;
+    position: sticky;
+    top: 40%;
+    right: 20%;
+    margin-left: 99%;
+    margin-top: 23%;
+    transform: translate(-50%,-50%);
+    background: rgb(128, 138, 145);
+    background: linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(205, 46%, 30%, 1) 100%);
+}
+.card2 h1, h6{
+    color: white;
+
+}
+label{
+    color: white;
+}
+
+table {
+    margin-top: -10%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

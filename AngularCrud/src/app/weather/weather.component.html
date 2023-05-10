@@ -1,0 +1,98 @@
+<body >
+<div class="container"   >
+    <div class ="row">
+        <div class="col-mid-6">
+            <div class="card">
+                <div class ="test-center">
+                </div>
+                <form>
+                    <div class="d-flex justify-content-around align-items-center py-5 my-4">
+                        <p class="fw-bold mb-0" style="font-size: 7rem;">{{tempature}}°C</p>
+                        <div class="text-start">
+                          <p class="small">Humidity :{{humidity}} %</p>
+                          <p class="h3 mb-3">FeelsLike : {{feelsLikeTem}}°C</p>
+                          <p class="small mb-0">Date :{{date  | date:'medium'}} </p>
+                          <p class="small mb-0">City :{{name}} </p>
+                          </div>
+                          </div>     
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class ="row">
+        <div class="col-mid-6">
+            <div class="card1">
+                <div class ="test-center">
+                </div>
+                <form>
+                    <div class="d-flex justify-content-around align-items-center py-5 my-4">
+                        <p class="fw-bold mb-0" style="font-size: 7rem;">{{tempature}}°C</p>
+                        <div class="text-start">
+                            <p class="small">Humidity :{{humidity}} %</p>
+                            <p class="h3 mb-3">FeelsLike : {{feelsLikeTem}}°C</p>
+                            <p class="small mb-0">Date :{{date  | date:'medium'}} </p>
+                            <p class="small mb-0">City :{{name}} </p>
+                          </div>
+                          </div>     
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class ="row">
+        <div class="col-mid-6">
+            <div class="card2">
+                <div class ="test-center">
+                </div>
+                <form>
+                    <div class="d-flex justify-content-around align-items-center py-5 my-4">
+                        <p class="fw-bold mb-0" style="font-size: 7rem;">{{tempature}}°C</p>
+                        <div class="text-start">
+                            <p class="small">Humidity :{{humidity}} %</p>
+                            <p class="h3 mb-3">FeelsLike : {{feelsLikeTem}}°C</p>
+                            <p class="small mb-0">Date :{{date  | date:'medium'}} </p>
+                            <p class="small mb-0">City :{{name}} </p>
+                          </div>
+                          </div>     
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<table>
+   
+        <div class="form-group">
+            <label for="exampleInputPassword1">Search by city name</label>
+            <input type="text" class="form-control" #searchKeyWord (keyup)="Search(searchKeyWord.value)" placeholder="Search by city name" id="name" name="name">
+            <button ></button>
+          </div>
+    <tr>
+      <th>City</th>
+      <th>Date</th>
+      <th>Tempature</th>
+      <th>Humidity</th>
+
+    </tr>
+    <tr *ngFor="let weather of Weather">
+        <td> {{ weather.name }} </td> 
+        <td> {{ weather.date | date:'medium' }} </td>
+        <td> {{ weather.temp }}°C </td>
+        <td> {{ weather.humidity }}% </td>
+
+      </tr>
+   <div style="margin: 2%;  width:13%; border: 3px solid gray; padding: 1%;">
+        <select>
+            <option *ngFor="let weather of Weather">
+              
+            </option>
+        </select>
+        </div>
+  </table>
+ </body>
+ 
