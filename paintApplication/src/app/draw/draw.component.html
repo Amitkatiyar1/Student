@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="paint">
+        <div class="options-container">
+            <nav class="options">
+
+
+
+                <a (click)="deleteSelected([])"><i class="fa fa-fw fa-eraser"></i> Delete element</a>
+                <a (click)="deleteAll()"><i class="fa fa-fw fa-eraser"></i> Delete all</a>
+
+            </nav>
+            <div class="color-pickers">
+                <a><input type="color" id="pick" (click)="pick()" value="#f6f82" /> Color</a>   
+                <a (click)="fill([])"><i class="fa-solid fa-fill-drip"></i> Fill</a>
+     
+            </div>
+        </div>
+        <ul class="shapes">
+            <li><a style="cursor: pointer" (click)="rectangle()">&#9645;</a></li>
+            <li><a style="font-size: 35px; cursor: pointer" (click)="square()">&#9633;</a></li>
+            <li><a style="font-size: 30px; cursor: pointer" (click)="ellipse()">&#x2B2D;</a></li>
+            <li style="cursor: pointer" (click)="circle()"><a>&#9711;</a></li>
+            <li><a style="font-size: 30px; cursor: pointer" (click)="triangle()">&#9722;</a></li>
+            <li style="cursor: pointer" (click)="line()"><a>&#9586;</a></li>
+        </ul>
+        <div style="background-color: rgba(223, 205, 181, 0.741)" id="drawing-field" (click)="draw_shape()"></div>
+    </div>
+</div>
+
